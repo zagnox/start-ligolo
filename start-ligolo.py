@@ -6,7 +6,6 @@ import argparse
 parser = argparse.ArgumentParser(description='Python script to quick start Ligolo-NG tun interface')
 parser.add_argument('username', help='choose username for tun interface')
 parser.add_argument('cert_option', choices=['-selfcert', '-autocert'], help='choose certificate option')
-parser.add_argument('-h', '--help', action='help', default=argparse.SUPPRESS, help='Show this help message and exit')
 args = parser.parse_args()
 
 # create tun interface
